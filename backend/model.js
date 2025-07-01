@@ -4,4 +4,4 @@ var signinSchema=mongoose.Schema({
     password:String
 })
 var signinmodel = mongoose.model("signin", signinSchema)
-module.export = signinmodel;
+module.exports = signinmodel;

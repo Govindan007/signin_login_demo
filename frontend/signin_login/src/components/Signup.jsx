@@ -5,7 +5,7 @@ import axios from 'axios'
 const Signup = () => {
     var [inp, setInp]=useState({email:"", password:""})
     const inputHandler=(e)=>{
-        setInp=({...inp,[e.target.name]:e.target.value})
+        setInp({...inp, [e.target.name]:e.target.value})
         console.log(inp)
     }
     const submitHandler=()=>{
